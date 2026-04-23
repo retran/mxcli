@@ -330,6 +330,11 @@ func (b *Builder) ExitShowStatement(ctx *parser.ShowStatementContext) {
 					ObjectType: ast.ShowAccessOnWorkflow,
 					Name:       &name,
 				})
+			} else if ctx.NANOFLOW() != nil {
+				b.statements = append(b.statements, &ast.ShowStmt{
+					ObjectType: ast.ShowAccessOnNanoflow,
+					Name:       &name,
+				})
 			} else {
 				b.statements = append(b.statements, &ast.ShowStmt{
 					ObjectType: ast.ShowAccessOn,

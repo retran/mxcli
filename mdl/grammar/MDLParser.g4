@@ -3075,6 +3075,7 @@ showStatement
     | showOrList ACCESS ON MICROFLOW qualifiedName
     | showOrList ACCESS ON PAGE qualifiedName
     | showOrList ACCESS ON WORKFLOW qualifiedName
+    | showOrList ACCESS ON NANOFLOW qualifiedName
     | showOrList SECURITY MATRIX (IN (qualifiedName | IDENTIFIER))?
     | showOrList ODATA CLIENTS (IN (qualifiedName | IDENTIFIER))?
     | showOrList ODATA SERVICES (IN (qualifiedName | IDENTIFIER))?

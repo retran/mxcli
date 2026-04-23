@@ -114,7 +114,7 @@ func TestDescribeMermaid_UnsupportedType(t *testing.T) {
 	}
 
 	ctx, _ := newMockCtx(t, withBackend(mb))
-	err := describeMermaid(ctx, "nanoflow", "MyModule.Something")
+	err := describeMermaid(ctx, "workflow", "MyModule.Something")
 	assertError(t, err)
 	assertContainsStr(t, fmt.Sprint(err), "not supported")
 }

@@ -792,6 +792,12 @@ func (s *BaseMDLParserListener) EnterCreateMicroflowStatement(ctx *CreateMicrofl
 // ExitCreateMicroflowStatement is called when production createMicroflowStatement is exited.
 func (s *BaseMDLParserListener) ExitCreateMicroflowStatement(ctx *CreateMicroflowStatementContext) {}
 
+// EnterCreateNanoflowStatement is called when production createNanoflowStatement is entered.
+func (s *BaseMDLParserListener) EnterCreateNanoflowStatement(ctx *CreateNanoflowStatementContext) {}
+
+// ExitCreateNanoflowStatement is called when production createNanoflowStatement is exited.
+func (s *BaseMDLParserListener) ExitCreateNanoflowStatement(ctx *CreateNanoflowStatementContext) {}
+
 // EnterCreateJavaActionStatement is called when production createJavaActionStatement is entered.
 func (s *BaseMDLParserListener) EnterCreateJavaActionStatement(ctx *CreateJavaActionStatementContext) {
 }
